@@ -144,5 +144,16 @@ public class ShipmentServiceTest {
 		assertThat(zipCodes.toString(), is("[[94133,94133], [94200,94699]]"));
 
 	}
+	
+	@Test
+	public void testSameRangesRepeating() throws Exception {
+
+		String[] args = { "[94200,94299]", "[94200,94299]" };
+		List<ZipCodeRange> zipCodes = shipmentService.processRanges(args);
+		assertThat(zipCodes, is(notNullValue()));
+		assertThat(zipCodes.size(), is(1));
+		assertThat(zipCodes.toString(), is("[[94200,94299]]"));
+
+	}
 
 }
