@@ -9,7 +9,7 @@ REQUIREMENTS
 ------------
 - Any IDE of your choice.
 - [Oracle JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 8
-- [Gradle](https://maven.apache.org/install.html) 3.6
+- [Maven](https://maven.apache.org/install.html) 3.6
 - GIT client
 
 
